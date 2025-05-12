@@ -1,0 +1,7 @@
+faiss-cpu
+langchain
+sentence-transformers
+streamlit
+PyMuPDF
+openai
+chromadb
