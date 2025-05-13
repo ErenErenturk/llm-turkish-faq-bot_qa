@@ -1,6 +1,8 @@
 from sentence_transformers import SentenceTransformer
 
+print("⚙️ Loading embedding model")
+model = SentenceTransformer("paraphrase-xlm-r-multilingual-v1")
+print("✅ Embedding model loaded")
+
 def get_embeddings(texts):
-    model = SentenceTransformer('dbmdz/bert-base-turkish-cased')
-    embeddings = model.encode(texts, show_progress_bar=True)
-    return embeddings
+    return model.encode(texts, show_progress_bar=True)
