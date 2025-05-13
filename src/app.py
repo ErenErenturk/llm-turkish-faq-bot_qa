@@ -1,21 +1,20 @@
-print("✅ Importing embed")
-from embed import get_embeddings
-
-print("✅ Importing qa_pipeline")
-from qa_pipeline import build_prompt, ask_mistral
-
-print("✅ Importing fitz, faiss, sentence_transformers")
-import fitz  # PyMuPDF
+import os
+import streamlit as st
+import fitz
 import faiss
 from sentence_transformers import SentenceTransformer
+from embed import get_embeddings
+from qa_pipeline import build_prompt, ask_mistral
 
-print("✅ Streamlit starting")
+MODE = os.getenv("APP_MODE", "dev")
 
-import streamlit as st
+def log(message):
+    if MODE == "dev":
+        print(f"[LOG] {message}")
 
-# Debug setting to always show errors
 st.set_option('client.showErrorDetails', True)
-
+st.set_page_config(page_title="LLM Türkçe PDF Soru-Cevap Botu", layout="wide")
+st.title("📄 Türkçe PDF Q&A Bot (Mistral + Ollama)")
 
 def extract_text_from_pdf(uploaded_file):
     doc = fitz.open(stream=uploaded_file.read(), filetype="pdf")
@@ -40,9 +39,6 @@ def query_index(index, embedding, top_k=3):
     distances, indices = index.search(embedding, top_k)
     return indices
 
-st.set_page_config(page_title="LLM Türkçe PDF Soru-Cevap Botu", layout="wide")
-st.title("📄 Türkçe PDF Q&A Bot (Mistral + Ollama)")
-
 uploaded_file = st.file_uploader("Bir PDF dosyası yükleyin", type=["pdf"])
 question = st.text_input("Sorunuzu yazın:")
 
@@ -58,8 +54,7 @@ if uploaded_file and question:
         q_embed = embed_model.encode([question])
         indices = query_index(index, q_embed, top_k=3)
         context = "\n\n".join([chunks[i] for i in indices[0] if i < len(chunks)])
-        prompt = build_prompt(question, context)
-        answer = ask_mistral(prompt)
+        answer = ask_mistral(question, context)
 
     st.subheader("💬 Mistral'dan Cevap")
     st.write(answer.strip())
