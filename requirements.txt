@@ -1,7 +1,9 @@
-faiss-cpu
-langchain
-sentence-transformers
-streamlit
-PyMuPDF
-openai
-chromadb
+numpy==1.26.4
+torch==2.1.2
+sentence-transformers==2.6.1
+huggingface-hub==0.20.3
+transformers==4.39.3
+faiss-cpu==1.7.4
+streamlit==1.32.2
+PyMuPDF==1.23.22
+PyPDF2==3.0.1

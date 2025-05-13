@@ -1,18 +1,18 @@
 from vector_store import query_index
 from embed import get_embeddings
 import subprocess
+import requests
 
 def ask_mistral(prompt):
     try:
-        result = subprocess.run(
-            ['ollama', 'run', 'mistral', prompt],
-            stdout=subprocess.PIPE,
-            stderr=subprocess.PIPE,
-            text=True,
+        response = requests.post(
+            "http://localhost:11434/api/generate",
+            json={"model": "mistral", "prompt": prompt, "stream": False},
             timeout=60
         )
-        return result.stdout.strip()
-    except subprocess.TimeoutExpired:
+        response.raise_for_status()
+        return response.json()["response"]
+    except requests.Timeout:
         return "Mistral zaman aşımına uğradı."
     except Exception as e:
         return f"Hata: {str(e)}"

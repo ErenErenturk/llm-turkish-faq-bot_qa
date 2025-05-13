@@ -1,7 +1,7 @@
 from sentence_transformers import SentenceTransformer
 
 print("⚙️ Loading embedding model")
-model = SentenceTransformer("paraphrase-xlm-r-multilingual-v1")
+model = SentenceTransformer("models/paraphrase-multilingual-mpnet-base-v2/")
 print("✅ Embedding model loaded")
 
 def get_embeddings(texts):

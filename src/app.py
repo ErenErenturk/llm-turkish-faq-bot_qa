@@ -50,7 +50,7 @@ if uploaded_file and question:
     with st.spinner("Belge işleniyor..."):
         raw_text = extract_text_from_pdf(uploaded_file)
         chunks = chunk_text(raw_text)
-        embed_model = SentenceTransformer('dbmdz/bert-base-turkish-cased')
+        embed_model = SentenceTransformer("models/paraphrase-multilingual-mpnet-base-v2")
         embeddings = get_embeddings(chunks)
         index = create_faiss_index(embeddings)
 
