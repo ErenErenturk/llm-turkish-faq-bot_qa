@@ -1,7 +1,7 @@
+from config import log, MODE
 import requests
-from app import log, MODE
 
-def ask_model(prompt, model="mistral", timeout=120):
+def ask_model(prompt, model="gemma:2b", timeout=90):
     try:
         log(f"{model} modeline prompt gönderiliyor (timeout={timeout}s)...")
         response = requests.post(
@@ -31,18 +31,31 @@ def chunk_context_and_summarize(context, chunk_size=1000):
     for i in range(0, len(context), chunk_size):
         chunk = context[i:i + chunk_size]
         log(f"Chunk {i//chunk_size + 1} özetleniyor...")
-        prompt = f"Aşağıdaki metni özetle:\n\n{chunk}\n\nÖzet:"
+        prompt = f"""Aşağıdaki metin bir özgeçmiş parçasıdır. Bu metindeki en önemli bilgileri sade ve kısa şekilde özetle. 
+Detaya girme, sadece öz bilgilere odaklan.
+
+Metin:
+{chunk}
+
+Kısa Özet:
+"""
         summary = ask_model(prompt, model="gemma:2b", timeout=60)
         summaries.append(summary.strip())
     return "\n".join(summaries)
 
 def build_prompt(question, context):
-    return f"{question}\n{context}\nCevap:"
+    return f"""Soru: {question}
 
-def ask_mistral(question, context):
-    log("Özetleme başlatılıyor...")
+İlgili içerik:
+{context}
+
+Yukarıdaki içeriği temel alarak soruyu açık, kısa ve sade bir şekilde cevapla.
+Cevap:
+"""
+
+def ask_gemma(question, context):
+    log("Tüm işlem gemma modeli ile başlatılıyor...")
     summarized_context = chunk_context_and_summarize(context)
     log("Final prompt oluşturuluyor...")
     final_prompt = build_prompt(question, summarized_context)
-    log("Mistral'a final prompt gönderiliyor...")
-    return ask_model(final_prompt, model="mistral", timeout=180)
+    return ask_model(final_prompt, model="gemma:2b", timeout=90)

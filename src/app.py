@@ -4,17 +4,12 @@ import fitz
 import faiss
 from sentence_transformers import SentenceTransformer
 from embed import get_embeddings
-from qa_pipeline import build_prompt, ask_mistral
-
-MODE = os.getenv("APP_MODE", "dev")
-
-def log(message):
-    if MODE == "dev":
-        print(f"[LOG] {message}")
+from qa_pipeline import build_prompt, ask_gemma
+from config import log, MODE
 
 st.set_option('client.showErrorDetails', True)
 st.set_page_config(page_title="LLM Türkçe PDF Soru-Cevap Botu", layout="wide")
-st.title("📄 Türkçe PDF Q&A Bot (Mistral + Ollama)")
+st.title("📄 Türkçe PDF Q&A Bot (Gemma 2B Only)")
 
 def extract_text_from_pdf(uploaded_file):
     doc = fitz.open(stream=uploaded_file.read(), filetype="pdf")
@@ -54,9 +49,9 @@ if uploaded_file and question:
         q_embed = embed_model.encode([question])
         indices = query_index(index, q_embed, top_k=3)
         context = "\n\n".join([chunks[i] for i in indices[0] if i < len(chunks)])
-        answer = ask_mistral(question, context)
+        answer = ask_gemma(question, context)
 
-    st.subheader("💬 Mistral'dan Cevap")
+    st.subheader("💬 Cevap")
     st.write(answer.strip())
 
     with st.expander("🔍 Kullanılan Belgelerden Seçilen Parçalar"):
