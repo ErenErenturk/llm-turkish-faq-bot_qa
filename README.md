@@ -10,6 +10,7 @@ Backend'de `Qwen 7B Chat` modeli kullanılarak belge içeriği analiz edilir, t�
 - 🧠 **Belge türü otomatik tespiti** (özgeçmiş, fatura, sözleşme vs.)
 - 📝 **Prompt özelleştirme** belge türüne göre
 - 💻 **Streamlit arayüzü**
+- 🧾 **FAISS ile semantik arama ve vektör tabanlı benzerlik eşleme**
 
 ## 🧠 Kullanılan Teknolojiler
 
@@ -31,7 +32,13 @@ ollama pull qwen:7b-chat
 ```bash
 pip install -r requirements.txt
 ```
-4. Uygulamayı başlat:
+4. Embedding modeli ve FAISS index'i üret:
+```bash
+python src/embed.py
+```
+> Bu işlem `models/` klasörü içine gömülü embedding modeli ve FAISS index dosyasını oluşturur.
+
+5. Uygulamayı başlat:
 ```bash
 streamlit run src/app.py
 ```
@@ -42,18 +49,44 @@ streamlit run src/app.py
 .
 ├── src/
 │   ├── app.py                 # Streamlit arayüzü
-│   ├── qa_pipeline.py         # QA iş akışı
+│   ├── qa_pipeline.py         # QA iş akışı (özetleme + prompt)
 │   ├── prompt_builder.py      # Belge türüne göre prompt oluşturucu
+│   ├── embed.py               # Embedding + FAISS index üretimi
 │   └── document_types.json    # Belge sınıflandırma anahtar kelimeleri
+├── models/                    # FAISS index ve embedding modeli burada tutulur
+│   └── (otomatik oluşturulur)
 ├── requirements.txt
 └── README.md
 ```
+
+## 🧾 `models/` Klasörü Hakkında
+
+Bu klasör `.gitignore` ile dışlanmıştır.  
+FAISS index ve embedding modelini üretmek için `src/embed.py` dosyasını çalıştırmalısınız.  
+Boş klasörle geliyorsa elle oluşturun:
+
+```bash
+mkdir models
+python src/embed.py
+```
+
+Alternatif olarak klasöre `.gitkeep` eklenmiştir.
 
 ## ✍️ Örnek Kullanım
 
 - **PDF Yükle:** `Eren_Erenturk_CV.pdf`
 - **Soru Sor:** "Bu kişi kimdir ve uzmanlık alanı nedir?"
 - **Cevap Al:** Model, belgeyi özetler, türünü tespit eder ve sorunu belgede geçen bilgilere göre cevaplar.
+
+## 🛠️ Yardımcı Script (isteğe bağlı)
+
+```bash
+# setup.sh
+pip install -r requirements.txt
+ollama pull qwen:7b-chat
+python src/embed.py
+streamlit run src/app.py
+```
 
 ## 🤝 Katkı
 
