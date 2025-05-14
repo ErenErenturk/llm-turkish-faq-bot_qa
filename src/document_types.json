@@ -1,0 +1,154 @@
+{
+    "resume": [
+        "curriculum vitae",
+        "özgeçmiş",
+        "education",
+        "skills",
+        "work experience",
+        "resume",
+        "cv"
+    ],
+    "academic": [
+        "abstract",
+        "introduction",
+        "literature review",
+        "methodology",
+        "references",
+        "makale",
+        "tez",
+        "academic"
+    ],
+    "contract": [
+        "contract",
+        "agreement",
+        "taraflar",
+        "maddeler",
+        "yükümlülük",
+        "taahhüt",
+        "hizmet sözleşmesi"
+    ],
+    "transcript": [
+        "transcript",
+        "grades",
+        "not dökümü",
+        "puan",
+        "ders",
+        "course list",
+        "akademik başarı"
+    ],
+    "invoice": [
+        "invoice",
+        "fatura",
+        "tutar",
+        "vergiler",
+        "miktar",
+        "toplam",
+        "ürün",
+        "kdv"
+    ],
+    "quotation": [
+        "quotation",
+        "teklif",
+        "unit price",
+        "birim fiyat",
+        "toplam maliyet",
+        "fiyat teklifi"
+    ],
+    "report": [
+        "report",
+        "rapor",
+        "analiz",
+        "bulgular",
+        "çıkarım",
+        "öneri",
+        "değerlendirme"
+    ],
+    "certificate": [
+        "certificate",
+        "sertifika",
+        "başarı",
+        "tamamlandı",
+        "katılım",
+        "onay",
+        "akreditasyon"
+    ],
+    "application": [
+        "application",
+        "başvuru",
+        "dilekçe",
+        "talep",
+        "müracaat",
+        "form"
+    ],
+    "identity_document": [
+        "identity card",
+        "kimlik",
+        "tc no",
+        "passport",
+        "nüfus",
+        "vatandaşlık"
+    ],
+    "meeting_minutes": [
+        "meeting minutes",
+        "toplantı tutanağı",
+        "gündem",
+        "katılımcılar",
+        "toplantı özeti"
+    ],
+    "financial": [
+        "financial statement",
+        "mali tablo",
+        "gelir",
+        "gider",
+        "bilanço",
+        "nakit akışı"
+    ],
+    "manual": [
+        "product manual",
+        "user guide",
+        "kullanım kılavuzu",
+        "teknik özellikler",
+        "cihaz açıklamaları"
+    ],
+    "timesheet": [
+        "timesheet",
+        "çalışma saatleri",
+        "vardiya",
+        "personel çizelgesi",
+        "iş takibi"
+    ],
+    "agenda": [
+        "agenda",
+        "gündem",
+        "toplantı planı",
+        "görüşülecek konular"
+    ],
+    "press_release": [
+        "press release",
+        "basın bülteni",
+        "duyuru",
+        "haber"
+    ],
+    "legal_notice": [
+        "legal notice",
+        "ihtarname",
+        "bildirim",
+        "hukuki süreç",
+        "tebligat"
+    ],
+    "presentation": [
+        "slides",
+        "presentation",
+        "sunum",
+        "powerpoint",
+        "görsel anlatım"
+    ],
+    "marketing": [
+        "brochure",
+        "flyer",
+        "marketing",
+        "reklam",
+        "tanıtım",
+        "ürün açıklaması"
+    ]
+}

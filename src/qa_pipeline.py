@@ -1,7 +1,10 @@
 from config import log, MODE
 import requests
+import json
+import os
+from prompt_builder import build_prompt
 
-def ask_model(prompt, model="gemma:2b", timeout=90):
+def ask_model(prompt, model="qwen:7b-chat", timeout=90):
     try:
         log(f"{model} modeline prompt gönderiliyor (timeout={timeout}s)...")
         response = requests.post(
@@ -31,31 +34,39 @@ def chunk_context_and_summarize(context, chunk_size=1000):
     for i in range(0, len(context), chunk_size):
         chunk = context[i:i + chunk_size]
         log(f"Chunk {i//chunk_size + 1} özetleniyor...")
-        prompt = f"""Aşağıdaki metin bir özgeçmiş parçasıdır. Bu metindeki en önemli bilgileri sade ve kısa şekilde özetle. 
+        prompt = f"""Aşağıdaki metin bir belge parçasıdır. Bu metindeki en önemli bilgileri sade ve kısa şekilde özetle.
 Detaya girme, sadece öz bilgilere odaklan.
 
 Metin:
 {chunk}
 
-Kısa Özet:
-"""
+Kısa Özet:"""
         summary = ask_model(prompt, model="gemma:2b", timeout=60)
         summaries.append(summary.strip())
     return "\n".join(summaries)
 
-def build_prompt(question, context):
-    return f"""Soru: {question}
+def guess_document_type(summary: str) -> str:
+    json_path = os.path.join(os.path.dirname(__file__), 'document_types.json')
+    with open(json_path, 'r', encoding='utf-8') as f:
+        document_types = json.load(f)
 
-İlgili içerik:
-{context}
-
-Yukarıdaki içeriği temel alarak soruyu açık, kısa ve sade bir şekilde cevapla.
-Cevap:
-"""
+    summary_lower = summary.lower()
+    for doc_type, keywords in document_types.items():
+        if any(keyword in summary_lower for keyword in keywords):
+            return doc_type
+    return "general"
 
 def ask_gemma(question, context):
-    log("Tüm işlem gemma modeli ile başlatılıyor...")
+    log("Tüm işlem Gemma ile başlatılıyor...")
+
+    # Metni özetle
     summarized_context = chunk_context_and_summarize(context)
-    log("Final prompt oluşturuluyor...")
-    final_prompt = build_prompt(question, summarized_context)
-    return ask_model(final_prompt, model="gemma:2b", timeout=90)
+
+    # Belge türünü tahmin et
+    doc_type = guess_document_type(summarized_context)
+
+    # Prompt oluştur
+    prompt = build_prompt(question, summarized_context, doc_type)
+
+    # Cevap al
+    return ask_model(prompt, model="gemma:2b", timeout=90)
