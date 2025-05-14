@@ -2,10 +2,13 @@ import os
 import streamlit as st
 import fitz
 import faiss
+import warnings
 from sentence_transformers import SentenceTransformer
 from embed import get_embeddings
 from qa_pipeline import ask_llm
 from config import log, MODE
+
+warnings.filterwarnings("ignore", category=UserWarning, module="torch")
 
 st.set_option('client.showErrorDetails', True)
 st.set_page_config(page_title="LLM Türkçe PDF Soru-Cevap Botu", layout="wide")

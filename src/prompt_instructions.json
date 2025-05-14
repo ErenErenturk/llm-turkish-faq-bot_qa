@@ -1,0 +1,21 @@
+{
+  "resume": "Bu belge bir özgeçmiş (CV) dosyasıdır. Kişinin eğitim geçmişi, iş tecrübeleri, becerileri ve kariyer hedefleri gibi bilgiler içerir. Kullanıcının sorduğu soruya bu bilgileri kullanarak, adayın kim olduğu, neler yaptığı ve hangi alanlarda uzmanlaştığına dair mantıklı ve açık bir yanıt ver.",
+  "academic": "Bu belge bir akademik makale, tez veya bilimsel çalışma olabilir. İçeriğinde araştırma soruları, yöntemler, analizler ve sonuçlar yer alır. Soruyu cevaplarken bilimsel bir dil kullan, belgedeki akademik içerikleri ve bulguları dikkate al.",
+  "contract": "Bu belge bir sözleşmedir. Taraflar, yükümlülükler, haklar ve sorumluluklar gibi yasal hükümler içerir. Kullanıcının sorusunu, sözleşmenin metnine bağlı kalarak, tarafların rollerine göre açıkla.",
+  "transcript": "Bu belge bir not dökümüdür. Öğrencinin aldığı dersler, notları, ortalaması gibi akademik performans bilgilerini içerir. Kullanıcının sorusunu bu akademik verilerle ilişkilendirerek açıkla.",
+  "invoice": "Bu belge bir fatura dökümüdür. Ürün/hizmet açıklamaları, tutarlar, vergi oranları (KDV dahil), tarih ve fatura numarası gibi bilgiler yer alır. Soruya, belgedeki finansal verilere dayanarak net ve açıklayıcı şekilde Türkçe cevap ver.",
+  "quotation": "Bu belge bir fiyat teklifidir. Müşteriye sunulan ürün ya da hizmetlerin birim fiyatları, toplam maliyeti ve ödeme koşulları gibi bilgiler içerir. Soruya, bu ticari detaylara dayanarak Türkçe ve net bir şekilde cevap ver.",
+  "report": "Bu belge bir iş, analiz ya da durum raporudur. İçinde gözlemler, bulgular, çıkarımlar ve öneriler yer alabilir. Soruyu cevaplamak için rapordaki temel sonuçlara ve analiz verilerine odaklan.",
+  "certificate": "Bu belge bir başarı, katılım veya akreditasyon sertifikasıdır. Belgeyi düzenleyen kurum, verilen yetki/belge türü ve kişisel bilgiler yer alır. Kullanıcının sorusunu, belgedeki onay ve tarih bilgilerine göre yanıtla.",
+  "application": "Bu belge bir dilekçe, başvuru veya talep formudur. Başvuran kişi, başvuru nedeni ve talep edilen işlem hakkında bilgi içerir. Soruya, başvuru amacını ve içerdiği talepleri net biçimde açıklayarak cevap ver.",
+  "identity_document": "Bu belge bir kimlik kartı, pasaport ya da vatandaşlık bilgisi içerir. Kişisel tanımlayıcı veriler (isim, doğum tarihi, T.C. no vb.) yer alır. Soruya bu resmi bilgiler doğrultusunda açık ve net cevap ver.",
+  "meeting_minutes": "Bu belge bir toplantı tutanağıdır. Toplantı gündemi, katılımcılar, alınan kararlar ve notlar yer alır. Kullanıcının sorusunu toplantı sırasında ele alınan konulara dayanarak yanıtla.",
+  "financial": "Bu belge bir mali rapor veya bilanço dökümüdür. Gelir, gider, nakit akışı ve finansal performans gibi detayları içerir. Soruya finansal terimleri doğru kullanarak net şekilde cevap ver.",
+  "manual": "Bu belge bir ürün ya da sistemin kullanım kılavuzudur. Teknik özellikler, fonksiyonlar, kullanım adımları gibi bilgiler yer alır. Soruya bu teknik içeriğe uygun şekilde detaylı ama sade cevap ver.",
+  "timesheet": "Bu belge bir personel çalışma çizelgesidir. Çalışma saatleri, vardiya bilgileri ve görev takibi içerir. Soruya zaman çizelgesi verilerine dayanarak mantıklı ve açıklayıcı şekilde cevap ver.",
+  "agenda": "Bu belge bir toplantı gündem planıdır. Görüşülecek maddeler ve toplantı öncesi planlanan konuları içerir. Soruya gündem maddelerine göre kısa ve açık şekilde cevap ver.",
+  "press_release": "Bu belge bir basın bülteni ya da kurumsal duyurudur. Kamuya yönelik açıklamalar, haberler veya bilgilendirmeler içerir. Soruya bu açıklamaların özünü Türkçeye çevirerek ve sade bir dille aktararak yanıt ver.",
+  "legal_notice": "Bu belge bir hukuki bildirim ya da ihtarnamedir. Belirli taraflara yapılan resmi bildirimleri içerir. Soruya hukuki terimlere sadık kalarak, taraflar arasındaki durumu yansıtacak şekilde cevap ver.",
+  "presentation": "Bu belge bir sunum dökümüdür. Slayt başlıkları, maddeler ve anlatım metinlerini içerir. Soruya sunumun genel amacı ve içerdiği konulara göre kısa ve bilgilendirici bir cevap ver.",
+  "marketing": "Bu belge bir pazarlama materyalidir. Broşür, ürün tanıtımı veya kampanya bilgisi içerebilir. Soruya pazarlama diliyle değil, sade ve açıklayıcı bir şekilde cevap ver."
+}

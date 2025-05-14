@@ -4,29 +4,46 @@ import json
 import os
 from prompt_builder import build_prompt
 
+# Prompt talimatlarını JSON'dan yükle
+instructions_path = os.path.join(os.path.dirname(__file__), "prompt_instructions.json")
+with open(instructions_path, "r", encoding="utf-8") as f:
+    INSTRUCTIONS = json.load(f)
+
 def ask_model(prompt, model="qwen:7b-chat", timeout=90):
     try:
-        log(f"{model} modeline prompt gönderiliyor (timeout={timeout}s)...")
+        log(f"🟡 [DEBUG] {model} modeline prompt gönderiliyor (timeout={timeout}s)...")
+        log(f"📤 [PROMPT]:\n---\n{prompt}\n---")
+
         response = requests.post(
             "http://localhost:11434/api/generate",
             json={
                 "model": model,
                 "prompt": prompt,
-                "stream": False,
-                "options": {
-                    "timeout": timeout
-                }
+                "stream": True,
             },
+            stream=True,
             timeout=timeout + 30
         )
         response.raise_for_status()
-        reply = response.json()["response"]
-        log(f"{model} cevabı: {reply[:200]}...")
-        return reply
+
+        final_output = ""
+        for line in response.iter_lines():
+            if not line:
+                continue
+            try:
+                data = json.loads(line.decode("utf-8"))
+                final_output += data.get("response", "")
+            except json.JSONDecodeError:
+                continue
+
+        log(f"📥 [RESPONSE]:\n---\n{final_output[:500]}...\n---")
+        return final_output
+
     except requests.Timeout:
         return f"{model} zaman aşımına uğradı."
     except Exception as e:
         return f"{model} hatası: {str(e)}"
+
 
 def guess_document_type(summary: str) -> str:
     json_path = os.path.join(os.path.dirname(__file__), 'document_types.json')
@@ -42,12 +59,11 @@ def guess_document_type(summary: str) -> str:
 def ask_llm(question, context):
     log("Tüm işlem Qwen modeli ile başlatılıyor...")
 
-    # Belge türünü doğrudan context üzerinden tahmin et
+    # Belge türünü context üzerinden tahmin et
     doc_type = guess_document_type(context)
 
     # Prompt oluştur
-    prompt = build_prompt(question, context, doc_type)
+    prompt = build_prompt(question, context, doc_type, INSTRUCTIONS)
 
-    # Cevap al
-    return ask_model(prompt, model="qwen:7b-chat", timeout=90)
-
+    # Cevabı al
+    return ask_model(prompt, model="qwen:7b-chat", timeout=150)
