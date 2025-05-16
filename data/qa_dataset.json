@@ -1,0 +1,389 @@
+[
+  {
+    "question": "İhbar tazminatı hesaplanırken sistemin vermiş olduğu ihbar sürelerine ek  gün tanımlaması nasıl yapılabilir?",
+    "answer": "Uyarlama İşlemleri --> İşyeri İhbar Tazminatı Önel Değerleri fonksiyonu üzerinden  işyeri bazlı seçim yapılarak, sendikalı ve sendikasız gruplar olmak üzere \"Hizmet Süresi\"ne  karşılık gelen gün sayıları değiştirilebilir. İşyeri bazlı tanımlanan gün değerleri ihbar süre  hesaplamalarında dikkate alınacak olup, Uyarlama İşlemleri --> Yasal Bilgiler -->  SGK/Kıdem/İhbar/Diğer Bilgiler fonksiyonunda yer alan veriler hesaplama işlemleri  sırasında kullanılmayacaktır."
+  },
+  {
+    "question": "Sicil kartı oluştururken tanımlı olan zorunlu alanlara ekleme yapabilir  miyiz?",
+    "answer": "Çalışan bilgilerine ait zorunlu alanlara ekleme yapmak için Güvenlik İşlemleri >  Kişisel Veri Görüntüleme/Silme Yetkisi İşlemleri fonksiyonu kullanılabilir. Bu fonksiyonda  yer alan \"Çalışan Ekranları İçin Veri Silme/Görüntüleme Yetkisi\" işlemi seçildikten sonra,  açılan ekranda başlıklar için \"Zorunlu\" bayrağı işaretlenerek zorunluluk kontrolleri  yönetilebilir."
+  },
+  {
+    "question": "Hrweb uygulamasında farklı şekillerde organizasyon şeması alınabilir mi?",
+    "answer": "Organizasyon Yönetimi --> Organizasyon Yapısı fonksiyonunda, her bir organizasyon  için soldaki üç nokta simgesi kullanılarak farklı organizasyon şemaları oluşturulabilir.  Oluşturulan rapor, \"Visio Şablonu Olarak Excele Aktar\" butonu aracılığıyla Excel'e transfer  edilebilir ve bu dosya daha sonra Visioya export edilebilir. Bu işlemin detaylarıyla ilgili bilgi  almak için Hrweb uygulamamızın ana sayfasında yer alan \"Sıkça Sorulan Sorular\" bölümüne  göz atabilirsiniz."
+  },
+  {
+    "question": "Banka ödeme dosyasını alırken \"İşyeri Banka Hesap Bilgileri bulunamadı\"  hatası alıyorum. Bu hata ile ilişkili olarak hangi adımları izlemeliyim?",
+    "answer": "Uyarlama İşlemleri > Banka Bilgileri > İşyeri Banka Hesap Bilgileri alanında \"Yeni  Kayıt\" butonuna bastıktan sonra tüm alanların doldurulup kaydedilmesi gerekmektedir.  Farklı bankalarla çalışılması durumunda işyeri bazlı bu tanımlamaların yapılması önemlidir.  İletilen hata mesajında şirket ve işyeri kodunuz ile birlikte ödeme dosyasını almak  istediğiniz bankanın kod bilgisi de yer almaktadır. Örneğin mesajda yer alan 01 046  verilerinde 01 işyeri, 046 ise Akbank'ın kodunu ifade etmektedir."
+  },
+  {
+    "question": "Muhtasar dosyasını e -beyanname programına yüklerken \"Asgari Ücret  İstisna GV Tutarı Toplamı\" ....* toplam çalışan sayısını geçemez uyarısını  alıyorum. Ne yapabilirim?",
+    "answer": "GIB tarafından ilgili uygulama üzerinde ay bazlı gelir vergisi istisna rakamı  kontrolleri yapılmaktadır. Alınan mesaj e -beyanname uygulamasının güncel versiyonda  olmadığını göstermektedir. GIB web sitesinden programın versiyonunun son sürümü ile  güncellenmesi ve sonrasında muhtasar dosyasının tekrar yüklenmesi gerekmektedir."
+  },
+  {
+    "question": "Dönemsel İşlemlerde yıl kapama işlemi yapmadan Ocak ayına ait çıkış  bordrolarını hesaplatırken nelere dikkat etmemiz gerekir?",
+    "answer": "Yıl kapama işlemi temel olarak aktif çalışanların birikmiş vergi matrahlarını  sıfırlamaktadır. Aylık Tahakkuk İşlemleri --> Birikmiş Vergi Matrahı Düzeltme  fonksiyonundan çalışan seçimi yapılarak birikmiş vergi matrahı sıfırlanabilir. Sıfırlama  işlemi yapıldıktan sonra Ocak ayına ait bordro hesaplatılabilir. Tüm bu işlemler  gerçekleştirilmeden önce ilgili çalışanın çıkış tarihi ve nedeni bilgilerinin girilmiş olması  önerilmektedir."
+  },
+  {
+    "question": "Çalışanlarımızın gelecek yıla ait izin kartlarını nasıl oluşturabiliriz?",
+    "answer": "İzin İşlemleri -->İzin Kartı İşlemleri fonksiyonumuzda İşyeri, İzin Tipi ve İzin Yılı  filtrelerine göre, oluşturmak istediğiniz yıla ait izin kartlarını toplu olarak  tanımlayabilirsiniz. Yaptığınız işlemi aynı fonksiyon üzerinden \"Yapılacak İşlem\" alanında  \"Geri Al\" seçerek iptal edebilirsiniz."
+  },
+  {
+    "question": "Gelecek yıla ait eğitim gruplarını ve eğitim kataloglarını nasıl  kopyalayabiliriz?",
+    "context": "Eğitim Bilgileri -->Eğitim Grupları fonksiyonumuzda üst ekranda yer alan \"Kopyala\"  butonu ile \"Kaynak Yıl\" ve \"Hedef Yıl\" bilgileri uygun şekilde tanımlanmalı ve kopyalama  kriterleri işaretlenerek işlem tamamlanmalıdır.",
+    "answer": "Eğitim Bilgileri -->Eğitim Grupları fonksiyonumuzda üst ekranda yer alan \"Kopyala\"  butonu ile \"Kaynak Yıl\" ve \"Hedef Yıl\" bilgileri uygun şekilde tanımlanmalı ve kopyalama  kriterleri işaretlenerek işlem tamamlanmalıdır."
+  },
+  {
+    "question": "Yeni bir yasal döneme ait gelir vergisi bilgileri nasıl tanımlanabilir?",
+    "answer": "Uyarlama İşlemleri -->Yasal Bilgiler fonksiyonunda \"Yapılacak İşlem\" alanında \"Gelir  Vergisi Bilgileri\" seçildikten sonra \"Yeni Kayıt\" butonuna basılmalıdır. Gelen ekranda \"Yasal  Değişiklik Tarihi\" alanına tanımlanmak istenen dönemin başlangıç tarihi yazılmalı ve \"Gelir  Vergisi Bilgilerini Getir\" butonu ile verilerin ilgili alanlara yazılması sonrasında \"Tamam\"  butonuna basılarak işlem sonuçlandırılmalıdır."
+  },
+  {
+    "question": "Yeni bir yasal döneme ait SGK/Kıdem bilgileri nasıl tanımlanabilir?",
+    "answer": "Uyarlama İşlemleri -->Yasal Bilgiler fonksiyonunda \"Yapılacak İşlem\" alanında  \"SGK/Kıdem/İhbar/Diğer Bilgiler\" seçildikten sonra \"Ara\" butonuna basılmalıdır. Gelen  ekranda son \"Yasal Değişiklik Tarihi\" olan kayıt için \"Kopyala\" seçilmelidir. \"Kopyalanacak  Yasal Değişiklik Tarihi (Hedef)\" alanına tanımlanmak istenen dönemin başlangıç tarihi  yazılarak \"Tamam\" butonuna basılmalıdır. Oluşan kayda \"Güncelle\" seçeneği ile girilerek üst  ekranda yer alan \"SGK Bilgilerini Getir\" butonu ile verilerin ilgili alanlara yazılması  sonrasında gelen değerlerin kontrolü yapılıp \"Tamam\" butonu ile işlem  sonuçlandırılmalıdır."
+  },
+  {
+    "question": "Çalışanlarımızın bordroları için kendilerinden onay/red cevabı alabilir  miyiz?",
+    "answer": "Portal İşlemleri -->Portal Parametreleri fonksiyonumuzda \"Genel Parametreler\"  altında yer alan 192 numaralı parametrenin değerini E olarak değiştirdikten sonra  çalışanlarınız portal ekranlarında bordro zarfları için onay alanlarını görebileceklerdir.  Onay istenecek bordro dönemine ait aralığın belirlenmesi için 193 ve 194 numaralı  parametreler kullanılmaktadır. Bordro Zarfı onay süreçlerinde itiraz özelliğinin kullanılması  isteniyorsa 195 numaralı parametre değerinin E olarak düzenlenmesi gerekmektedir. Ek  olarak onay süreçlerinde kullanabileceğiniz zaman damgası özelliğimiz de bulunmaktadır.  Bu özelliğimiz ile ilgili detay bilgi almak isterseniz Müşteri Yönetici'niz ile görüşebilirsiniz."
+  },
+  {
+    "question": "Hrweb uygulaması üzerinden farklı uygulamalar ile entegrasyon  sağlanabilir mi?",
+    "answer": "Müşterilerimizin talepleri doğrultusunda (sicil, izin bilgileri, bordro zarfı vb)  bilgilerin, Hrweb'den hedef sisteme veya kaynak sistemden Hrweb'e aktarımı sağlanabilir.  İlgili aktarımlar firma özelinde oluşturulan, kaynak veya hedef fark etmeksizin web servis  linklerimize istek atılarak gerçekleştirilmektedir. Taleplerinizi \"Destek Portalı\" üzerinden  detaylı olarak iletmeniz durumunda tarafınıza detaylı bilgilendirme yapılacak ve onayınız  doğrultusunda teklif iletilmesi sağlanacaktır."
+  },
+  {
+    "question": "Huzur hakkı alan çalışanlarımız için yapılacak işlemler nelerdir?",
+    "answer": "Hrweb uygulamamızda iki farklı yöntem ile ilerlenebilir. İlk yöntem ek kazanç olarak  yeni bir tanım yapılması şeklindedir. Uyarlama İşlemleri -->Hesaplama ve Formülasyon  fonksiyonumuzda HF Grubu olarak Ek Kazanç seçilerek gelir ve damga vergisine tabi ancak  SGK bayrağı işaretli olmayan yeni bir kalem oluşturulabilir. İkinci yöntem çalışanın sicil  kartındaki ücret sekmesinde huzur hakkı tutarının tanımlanmasıdır. Ayrıca  Sigorta/Vergi/Sendika sekmesinde Sigorta Yüzdesi olarak 0 seçilmesi ve İşsizlik Sigortası  Uygulansın Mı? seçeneğinin de işaretlenmemesi gerekmektedir. Ek olarak Vergi Grubu  alanında Normal (Vergili,Damgalı) seçilmesi önemlidir."
+  },
+  {
+    "question": "Bordroya giren kalemlerin brütleştirme işlemleri hangi sıra ile  gerçekleştirilmektedir?",
+    "answer": "Brütleştirme işleminde brüt kalemler (ücret, fazla mesai, ek kazanç vb) ilk sırada yer  almaktadır. Net kazançlar için ise, öncelik ücrette olup sonrasında fazla mesai ve ek kazanç  kalemleri brütleştirilir. Ek kazanç kalemleri içerisindeki brütleştirme sırası, Uyarlama  İşlemleri -->Hesaplama ve Formülasyon fonksiyonunda Ek Kazanç HF Grubunda yer alan  \"Öncelik\" alanındaki değere göre, büyükten küçüğe doğru sıralanarak işlem görmektedir.  Tüm kalemlerin öncelik sırasının aynı olması durumunda brütleştirme işlemine tutarı en  büyük olan ek kazançtan başlanmaktadır."
+  },
+  {
+    "question": "Net ücretli çalışanlarda \"Devir Sigorta Farkı\" ek kazancı neden  oluşmaktadır?",
+    "answer": "Cari bordro döneminden önceki iki aya ait bordrolardan gelen bir devir sigorta  matrahı olması durumunda, devir matrahından kaynaklı çalışanın ücret kaybı yaşamaması  için \"Devir Sigorta Matrahı\" ek kazanç kaleminin otomatik olarak bordroya dahil edilmesi  sağlanmaktadır."
+  },
+  {
+    "question": "Çalışan yönetici bilgisi raporu nereden alınabilir?",
+    "answer": "Çalışan Bilgileri -->Çalışan Yönetici Bilgileri Raporu'nda işyerleri seçildikten sonra,  \"Yazdır\" butonuna basılarak aktif çalışanların organizasyon, pozisyon bilgileri ile birlikte 1.  ve 2. yönetici bilgilerine ulaşmak mümkündür."
+  },
+  {
+    "question": "Aylık ücretli bir çalışan için saat ücreti ile hesaplama yapılabilir mi?",
+    "answer": "Öncelikle Organizasyon Yönetimi -->Şirket Parametreleri fonksiyonunda 32 numaralı  parametre değerinin E olarak seçilmesi gerekmektedir. Gün, Saat ve Fazla Mesai ekranında  gün değeri ile birlikte saat değerinin girilmesi durumunda çalışanın sicil kartındaki ücreti  Aylık olarak belirlense dahi, ilgili ayın bordro hesaplamaları saat üzerinden yapılabilir."
+  },
+  {
+    "question": "Ödeme İşlemleri fonksiyonunda \"Ödenecek Banka\" bilgisi  görünmemektedir.",
+    "context": "Uyarlama İşlemleri -->Kodlu Alan Tanımları -->Grup alanında \"Banka Şablonları\"  seçtikten sonra, \"Yeni Kayıt\" butonuna basarak tanımlamak istediğiniz banka kodunu \"Alan  Kodu\" ve \"Alan İçeriği\" bölümlerine yazarak \"Tamam\" butonuna basınız. İlgili banka  kodlarına \"Yardım\" butonu aracılığıyla ulaşabilirsiniz.",
+    "answer": "Uyarlama İşlemleri -->Kodlu Alan Tanımları -->Grup alanında \"Banka Şablonları\"  seçtikten sonra, \"Yeni Kayıt\" butonuna basarak tanımlamak istediğiniz banka kodunu \"Alan  Kodu\" ve \"Alan İçeriği\" bölümlerine yazarak \"Tamam\" butonuna basınız. İlgili banka  kodlarına \"Yardım\" butonu aracılığıyla ulaşabilirsiniz."
+  },
+  {
+    "question": "İşyeri, Organizasyon ve Pozisyon (Kadro) Yapısı ekranlarında yer alan  Çalışan Listesi raporundaki siciller hangi kriterlere göre listelenmektedir?",
+    "answer": "Çalışan Bilgileri -->Sicil Bilgileri -->Sigorta / Vergi / Sendika Bilgileri sekmesinde yer  alan Sigorta Durumu alanında \"Stajyer\" olarak seçilen çalışanlar belirtilen ekranlardaki  raporumuza getirilmemektedir. Raporda ilgili kullanıcının yetkili olduğu işyerlerindeki aktif  çalışanlar listelenmektedir."
+  },
+  {
+    "question": "Çalışanlarımıza ait Birikmiş Vergi Matrahı listesini nasıl alabiliriz?",
+    "answer": "Aylık Tahakkuk İşlemleri -->Raporlar -->SGK Raporları/Bildirimler sekmesindeki 19 - Birikmiş Vergi Matrahları Listesi aracılığıyla ilgili aya ait vergi matrahı ile birikmiş vergi  matrahı verilerine ulaşabilirsiniz."
+  },
+  {
+    "question": "Hrweb sisteminde organizasyon hiyerarşisi ile yönetici bilgisi nasıl  bulunmaktadır?",
+    "answer": "Organizasyon Yönetimi -->Organizasyon Yapısı fonksiyonu üzerinden tanımlanan  organizasyonlar \"Üst Organizasyon\" alanı ile birbirine bağlanmaktadır. Aynı ekranda  tanımlanan \"Yönetici Pozisyon (Kadro) Kodu\" ilgili organizasyonun yöneticisini bulmak için  kullanılmaktadır. İlgili organizasyonda tanımlanan kadro koduna sahip aktif bir çalışan  olmaması durumunda yönetici bilgisi bir üst organizasyon üzerinden belirlenmektedir. Bu  yapının kullanımı için Organizasyon Yönetimi -->Şirket Parametreleri fonksiyonunda 55  numaralı parametre değerinin H olarak seçilmesi gerekmektedir."
+  },
+  {
+    "question": "Hrweb sisteminde organizasyon hiyerarşisi dışında farklı bir yöntem ile  yönetici bilgisinin bulunabilmesi mümkün müdür?",
+    "answer": "Organizasyon Yönetimi -->Şirket Parametreleri fonksiyonunda 55 numaralı  parametre değerinin E olarak seçilmesi durumunda, yönetici bilgisi organizasyon  hiyerarşisi yerine \"Çalışan Bilgileri\" fonksiyonunda yer alan \"Kategori\" alanından  belirlenebilmektedir. Bu alanda gözükecek yöneticiler ise, Uyarlama İşlemleri -->Kodlu Alan  Tanımları -->Kategori Kodları grubundan tanımlanabilmektedir."
+  },
+  {
+    "question": "Hrweb uygulamasında şirketimizin logosunu formlara ve uygulamaya nasıl  ekleyebiliriz?",
+    "answer": "Organizasyon Yönetimi -->Şirket Bilgileri -->Şirket Logo İşlemleri fonksiyonundan  \"Dosya Seçiniz\" sekmesi aracılığıyla şirket veya işyeri bazlı logoların yüklemesi  yapılabilmektedir. İlgili ekranda yer alan butonlar aracılığıyla görsel düzenlemeler yapılıp  \"Logoyu Oluştur\" seçeneği ile işlem tamamlanmaktadır. Şirket bazlı logo yüklemek için  \"İşyeri Adı\" alanında herhangi bir değişiklik yapılmaması önemlidir. İşyeri bazlı logo  yüklemek için ise, \"İşyeri Adı\" alanında yükleme yapılacak işyerleri seçilmelidir."
+  },
+  {
+    "question": "Aile Yardımı ve Çocuk Yardımı ek kazanç tanımları yapmak istiyorum,  işlem adımları nelerdir?",
+    "answer": "Aile Yardımı ve Çocuk Yardımı özelinde uygulama farklılıklarını ortadan  kaldırabilecek yasal bir bütünlük maalesef bulunmamaktadır. Bu nedenle uygulamamızda  tek bir formül veya işlem adımı tanımlayabilmek mümkün değildir. Destek Portalı  üzerinden talebinizi hesaplama detayları ile birlikte ayrıntılı olarak iletmeniz durumunda  gerekli yönlendirmeler yapılacaktır."
+  },
+  {
+    "question": "İzin yükü raporu nasıl alınabilir?",
+    "answer": "İzin İşlemleri -->Toplu İzin İşlemleri fonksiyonunda \"Yapılacak İşlem\" olarak \"İzin  Yükü Hesapla\" seçildikten sonra, İzin Yılı ve İzin Başlangıç / Yükü Hesaplama Tarihi  girilerek \"Ara\" butonu aracılığıyla rapora gelmesi istenen çalışanlar seçilebilir. Hesaplama  Tarihi alanına işlem gününden önceki bir tarih girilmesi durumunda, kullanılan ve  hakedilen izinler ekrana girilen tarih dikkate alınarak hesaplanmaktadır. İleriye dönük bir  tarih girilmesi durumunda ise, yalnızca hakedilen izinler dikkate alınmaktadır. Bu tarihten  sonra kullanılan izinler varsa bu izinler de bakiyeden düşülerek rapora yansıyacaktır."
+  },
+  {
+    "question": "Hrweb uygulamasında izin hak ediş tarihini etkileyen kriterler nelerdir?",
+    "answer": "İzin hak ediş tarihini belirleyen 3 farklı kriter bulunmaktadır. Çalışan Bilgileri -->Sicil  Bilgileri -->Kıdem Bilgileri sekmesinde İzin Başlangıç Tarihi alanında veri yoksa Şirkete Giriş  Tarihi İzin Başlangıç Tarihi olarak kabul edilmektedir. Bu alana farklı bir tarih girilirse İzin  Başlangıç Tarihi olarak giriş yapılan tarih dikkate alınmaktadır. İzin İşlemleri -->Askı Gün  Bakım İşlemleri fonksiyonundan çalışan için veri girişi yapılması durumunda giriş yapılan  gün kadar izin hak ediş tarihi ötelenmektedir. Çalışan Bilgileri -->Önceki İş Tecrübeleri  fonksiyonundan çalışan için veri girişi yapılıp \"Önceki Deneyim İzin Hak Edişinden Sayılsın  Mı?\" seçeneği işaretlenmesi durumunda izin hak ediş tarihi bu veriye istinaden  değişmektedir."
+  },
+  {
+    "question": "Taksitli kesintisi olan bir çalışana ikinci bir taksitli kesinti kalemi  tanımlanabilir mi?",
+    "answer": "Kural olarak taksitli kesintisi devam eden bir çalışan için aynı kesinti kodu ile veri  girişi yapılamamaktadır. İkinci bir taksitli kesinti girilmek istenirse, Uyarlama İşlemleri -- >Hesaplama ve Formülasyon fonksiyonunda HF Grubu olarak Taksitli Kesinti seçilerek  gelen ekrandan farklı bir kod ile yeni bir taksitli kesinti tanımlanabilir ve bu yeni kalem ilgili  ayın bordro hesaplamalarına dahil edilebilir."
+  },
+  {
+    "question": "Gün/Saat ve Fazla Mesai fonksiyonuna yeni bir ücretli/ücretsiz özel  puantaj kalemi nasıl getirilebilir?",
+    "answer": "Uyarlama İşlemleri -->Hesaplama ve Formülasyon fonksiyonundan HF Grubu olarak  Özel Puantaj seçilerek \"Yeni Kayıt\" butonu ile istenilen özel puantaj kaleminin tanımlanması  sağlanabilir. Tanımlama yapılırken Formül Kodu olarak \"Puantaj\" seçili gelmekte olup,  değiştirilmemesi gerekmektedir. Brüt/Net, Dmg. Sgr. Glv. alanlarına girilen verilerin bir  önemi bulunmamakta olup, çalışanın sicil kartında tanımlı olan veriler hesaplamalarda  dikkate alınmaktadır. Yeni oluşturulan Özel Puantaj kaleminin ücreti ödenen veya  ödenmeyen gruba dahil edilmesi Hesaplama Oranı'ndaki değere göre belirlenmektedir.  Standart yapıda yeni tanımlanan kalem ücreti ödenen bir özel puantaj olup, ödenmeyen  gruba dahil edilmesi için Hesaplama Oranı'nın 0 olarak tanımlanması gerekmektedir."
+  },
+  {
+    "question": "Sendika aidatı nasıl tanımlanır?",
+    "answer": "Uyarlama İşlemleri -->Hesaplama ve Formülasyon fonksiyonumuzda HF Grubu  olarak \"Sendika\" seçildikten sonra 01 kodlu Sendika Aidatı kalemine Güncelleme butonu ile  giriş yapılarak \"Formül Kodu\" alanında uygun formül seçilebilir. Formül kodlarının detaylı  açıklamasına ilgili ekrandaki \"Yardım\" butonu aracılığıyla ulaşılabilir. Bu işlem yapıldıktan  sonra, Sendika üyesi çalışanların sicil bilgileri aktarımları Çalışan Bilgileri -->Toplu Çalışan  Bilgisi Yükleme/Güncelleme fonksiyonumuz üzerinden \"Toplu Çalışan Bilgisi Güncelleme\"  seçilerek yapılabilir. Yükleme yapılacak dosyaya \"Yardım\" butonu aracılığı ile ulaşıldıktan  sonra, dosyada İşyeri, Sicil No ve Sendikalı alanları bırakılıp diğer alanlar silinerek, verilerin  uygun şekilde yüklenmesi sağlanabilir."
+  },
+  {
+    "question": "Birden fazla sendika formülü (sendika/dayanışma) nasıl tanımlanabilir?",
+    "answer": "Uyarlama İşlemleri -->Hesaplama ve Formülasyon fonksiyonumuzda HF Grubu  olarak \"Sendika\" seçildikten sonra 01 kodlu Sendika Aidatı kalemine Güncelleme butonu ile  giriş yapılarak \"Formül Kodu\" alanında uygun formül seçilebilir. Aynı fonksiyonda \"Yeni  Kayıt\" butonu ile 02 kodlu Dayanışma Aidatı oluşturulup formül kodu tanımlanabilir.  Formül kodlarının detaylı açıklamasına ilgili ekrandaki \"Yardım\" butonu aracılığıyla  ulaşılabilir. Sonrasında Sendika/Dayanışma üyesi çalışanların sicil aktarımları Çalışan  Bilgileri -->Toplu Çalışan Bilgisi Yükleme/Güncelleme fonksiyonumuzdan \"Toplu Çalışan  Bilgisi Güncelleme\" seçilerek yapılabilir. Yükleme yapılacak dosyaya \"Yardım\" butonu  aracılığı ile ulaşıldıktan sonra, dosyada İşyeri, Sicil No ve Sendikalı alanları bırakılıp diğer  alanlar silinerek, verilerin yüklenmesi sağlanabilir. Sendikalı alanında 01 kodlu formül  çalışacak personeller için 1|Sendikalı, 02 kodlu formül çalışacak personeller için ise  2|Dayanışmalı değeri seçilmelidir."
+  },
+  {
+    "question": "Aylık Çalışma Saati 225'den farklı olan işyerlerinde tanımlama işlemi nasıl  yapılabilir?",
+    "answer": "Organizasyon Yönetimi -->İşyeri Bilgileri -->İşyeri Tahakkuka Esas Bilgiler  fonksiyonumuzda \"Aylık Çalışma Saati\" Kapsam İçi ve Kapsam Dışı grupları için 225'den  farklı olarak tanımlanabilir. Bu alandaki veri esas alınarak aylık ve günlük ücretli  çalışanların fazla mesai hesaplamalarında 1 saatlik ücreti bulunmaktadır."
+  },
+  {
+    "question": "Akbank banka ödeme dosyası şifreli olarak alınabilir mi?",
+    "answer": "Organizasyon Yönetimi -->Şirket Parametreleri -->68 -Banka Ödeme Disketi Şifreli mi?  parametre değerinin \"E\" yapılması durumunda Ödeme İşlemleri fonksiyonumuzdan  Akbank'a ait dosya şifreli olarak alınabilmektedir.",
+    "answer_start": 0
+  },
+  {
+    "question": "Akbank, Garanti Bankası ve T. İş Bankası için ödeme dosyası SFTP  üzerinden gönderilebilir mi?",
+    "answer": "Öncelikle Organizasyon Yönetimi -->Şirket Parametreleri -->255 -Banka ödeme  dosyası SFTP üzerinden mi gönderilsin? parametresinin değeri \"E\" yapılmalıdır. Sonrasında  Uyarlama İşlemleri -->Banka SFTP Bilgileri fonksiyonumuzdan her bir işyeri ve banka için  SFTP Host URL, Kullanıcı Adı, Şifre ve Dosya Adı ve ilgili bankanın SFTP yapısına göre Dosya  Yolu bilgileri tanımlanmalıdır. Bu tanımlamalar yapıldıktan sonra, Ödeme İşlemleri  fonksiyonumuzdan her bir işyeri için ayrı ayrı Banka Ödeme Dosyası alındığında bu  dosyalar tanımlanan SFTP adreslerine doğrudan gönderilecektir. Eğer ilgili dosyaların  gönderilmeden önce kontrol edilmesi isteniyorsa, ödeme dosyası \"Ödeme Dosyasını  Görüntüle\" kutucuğu işaretlendikten sonra alınmalıdır."
+  },
+  {
+    "question": "SGK'ya yapılan \"askerlik\" ve \"doğum\" borçlanması ödemeleri bordrolara  vergi indirimi olarak nasıl yansıtılmaktadır?",
+    "answer": "Uyarlama İşlemleri -->Hesaplama ve Formülasyon fonksiyonunda HF Grubu olarak  \"Muafiyet\" seçildikten sonra 01 ve/veya 02 kodları ile muafiyet kalemleri tanımlanmalıdır.  Tanımlamalar yapıldıktan sonra, Aylık Tahakkuk İşlemleri -->Muhtelif Muafiyetler  fonksiyonundan ilgili çalışanlar için hesaplama yapılacak bordro dönemine veri girişi  yapılarak muafiyet tutarlarının hesaplamalara dahil edilmesi sağlanabilir. Burada dikkat  edilmesi gereken önemli nokta, yapılan ödeme tutarının çalışanın aylık vergi matrahından  fazla olması halinde, kalan tutarın sonraki aylar için ilgili fonksiyondan tanımlanması  gerekliliğidir."
+  },
+  {
+    "question": "Hrweb uygulamasından banka ödeme disketi aldığımızda mail veya SMS  ile ilgili kişilere bilgi verilmesi sağlanabilir mi?",
+    "answer": "Yardımcı İşlemler -->Otomatik E -Mail Tanımları fonksiyonumuzda yer alan \"25 -  BANKA ÖDEME DİSKETİ OLUŞTURMA BİLDİRİMİ\" aktif edilerek E -Mail İçeriği alanında yer  alan bilgilerin istenilen e -mail adreslerine, Yardımcı İşlemler -->Otomatik SMS Tanımları  fonksiyonumuzda yer alan \"25 - Ödeme Disketi Oluşturma Bildirimi\" aktif edilerek SMS  içeriği alanında yer alan bilgilerin SMS adreslerine gönderilmesi sağlanabilir."
+  },
+  {
+    "question": "Ücretleri aynı olan çalışanların bordrolarında yer alan Asgari Ücret Gelir  Vergisi'nin farklı hesaplanması normal midir?",
+    "answer": "Asgari Ücret Kümülatif Matrahı, Asgari Ücret Gelir Vergisi tutarını etkileyen bir  faktördür. Yıl içerisinde bordrolar hesaplandıkça Asgari Ücret Kümülatif Matrahı, Yasal  Bilgiler fonksiyonumuzda yer alan SGK / Kıdem / İhbar / Diğer Bilgiler sekmesindeki \"Gelir  Vergisi Muafiyet Değeri\" kadar artmaktadır. Bu matrahtan kaynaklanan gelir vergisi tutarı  her ay bordroya Asgari Ücret Gelir Vergisi tutarı olarak yansıtılmaktadır. Aynı ücrete sahip  çalışanların Asgari Ücret Kümülatif Matrahı değişkenlik gösterebileceğinden, ilgili tutardaki  farklılıklar normal karşılanmaktadır."
+  },
+  {
+    "question": "Bordrosunda \"Kesilemeyen Kesinti\" oluşan bir çalışanın kesinti sıralaması  nasıl belirlenir?",
+    "answer": "Uyarlama İşlemleri -->Hesaplama ve Formülasyon fonksiyonunda HF Grubu olarak  Özel Kesinti ve Taksitli Kesinti kalemleri içerisinde \"Öncelik\" değeri - olarak belirlenen  kesintiler hesaplamalarda en son işlem görmektedir. Örneğin \"Öncelik\" değeri 0 olan kesinti  ilk olarak hesaplamalara dahil edilirken, -1 değerine sahip olan kesinti ise ilgili bordroda en  son hesaplamaya dahil edilerek bu kalemin kesilemeyen kesintiye girmesi  engellenebilecektir."
+  },
+  {
+    "question": "Bordroya giren net ek kazanç kalemlerinin sigorta ve gelir vergisi  açısından brütleştirme sıralaması belirlenebilir mi?",
+    "answer": "Uyarlama İşlemleri -->Hesaplama ve Formülasyon fonksiyonunda HF Grubu olarak  Ek Kazanç kalemleri içerisinde \"Öncelik\" değeri - olarak belirlenen net ek kazançlar  hesaplamalarda en son işlem görmektedir. Örneğin \"Öncelik\" değeri 0 olan kazanç ilk olarak  hesaplamalara dahil edilirken, -1 değerine sahip olan kazanç ise ilgili bordroda en son  hesaplamaya dahil edilmektedir. Bu özellik sayesinde SGK tavanı ile gelir vergisi dilim  değişikliklerine göre brütleşen tutar değişkenlik gösterebilmektedir."
+  },
+  {
+    "question": "Şifre girmeden Hrweb İK uygulaması üzerinden Hrweb Portal  uygulamasına erişim sağlanabilir mi?",
+    "answer": "Bu özelliğin aktif olabilmesi için ilgili kullanıcının hem Hrweb hem de Portal  uygulamalarında kaynak yetkisinin bulunması gerekmektedir. Bu yetkiye sahip bir  kullanıcı, Hrweb uygulamasının sol üst bölümünde yer alan mavi renkli \"Portal  Uygulamasına Giriş\" butonuna tıklayarak Portal uygulamasına giriş yapabilir."
+  },
+  {
+    "question": "Kullanıcı bazında Tahakkuk ve Çalışan Bilgileri liste ekranlarındaki verileri  nasıl özelleştirebilirim?",
+    "answer": "Uyarlama İşlemleri -->Kullanıcı Parametreleri fonksiyonumuzda yer alan \"Liste  Ekranlarında Görüntülenecek Bilgiler\" bölümündeki işaretli veriler, Tahakkuk ve Çalışan  Bilgileri liste ekranlarında gösterilmektedir. Bu fonksiyondaki değişiklikler yalnızca  değişikliği yapan kullanıcı için geçerli olup, diğer kullanıcılar bu değişiklikten  etkilenmeyeceklerdir."
+  },
+  {
+    "question": "Bordro modülümüzü kullanan müşterilerimizde ay içi nakil işlemleri nasıl  yapılmalıdır?",
+    "answer": "Hrweb uygulamamızda nakil işlemleri Organizasyon Yönetimi -->Toplu İşyeri  Değiştirme/Nakil fonksiyonundan yapılmaktadır. Bu fonksiyondan nakil işlemi  gerçekleştirilmeden önce, ilgili çalışanın \"Mevcut İşyeri\"ndeki bordrolarının hesaplanmış  olması gerekmektedir. Hesaplamalar tamamlandıktan sonra, bu fonksiyon üzerinden nakil  işlemi gerçekleştirip \"Yeni İşyeri\"ndeki bordro işlemleri yapılabilir. Nakil işlemi  gerçekleştirildikten sonra \"Mevcut İşyeri\"ne ait bordroda SGK Matrahını etkileyen bir  değişiklik yapılması durumunda \"Yeni İşyeri\"ndeki bordronun tekrar hesaplanması  gerekmektedir. İlgili değişiklik Gelir Vergisi matrahını da etkiliyorsa, öncelikle \"Yeni  İşyeri\"ndeki Birikmiş Vergi Matrahı uygun şekilde düzeltilmeli sonrasında \"Yeni  İşyeri\"ndeki ilgili bordro tekrar hesaplatılmalıdır."
+  },
+  {
+    "question": "I. II. ve III. derece engelli çalışanlar için gelir vergisi indirim tutarları bordro  hesaplamalarına nasıl dahil edilmektedir?",
+    "answer": "Aylık ücretli bir çalışan için Uyarlama İşlemleri -->Yasal Bilgiler -- >SGK/Kıdem/İhbar/Diğer Bilgiler fonksiyonunda ilgili bordro dönemine denk gelen \"Yasal  Değişiklik Tarihi\"ne ait \"Engellilik İndirimi Açıklaması\" bölümündeki tutarlar, SGK  gününden bağımsız olarak gelir vergisi matrahından düşülmektedir. Saatlik ve Günlük  ücretli çalışanlar için ise, bu tutarlar SGK günü ile kıstel uygulanarak gelir vergisi  matrahından düşülmektedir."
+  },
+  {
+    "question": "Gelir İdaresi Başkanlığı tarafından engelli bir çalışan ile bakmakla yükümlü  olduğu eşi ve çocukları için ayrı ayrı verilen vergi indirim belgelerinin bulunması  durumunda, indirim tutarları ayrı ayrı toplanarak vergi matrahından  düşülmekte midir?",
+    "answer": "Engelli çalışan ile Aile Bilgileri'nde bakmakla yükümlü olarak tanımlanmış engelli  bireylerin indirim tutarları toplanarak vergi matrahından düşülmektedir."
+  },
+  {
+    "question": "Sistemde var olan bir kullanıcı ile aynı yetkilere sahip yeni bir kullanıcı  nasıl oluşturulabilir?",
+    "answer": "Öncelikle yeni kullanıcının Yetki Yönetim Sistemi'nden oluşturulması  gerekmektedir. Kullanıcı oluşturulduktan sonra Güvenlik İşlemleri --> Yetki İşlemleri  fonksiyonumuzda \"Kopyala\" butonuna basılarak kopyalanan ve kopyalanacak kullanıcı  seçimleri yapılmalı ve yetki verilecek fonksiyonlar işaretlenip \"Tamam\" butonuna  basılmalıdır."
+  },
+  {
+    "question": "Hrweb'deki İK kullanıcım ile Portal uygulamasına girebilir miyim?",
+    "answer": "Güvenlik İşlemleri -->Yetki İşlemleri ekranında yer alan \"YYS Kullanıcılarını Çalışan  İle Eşleştir\" butonuna basıldıktan sonra, gelen ekranda Portal uygulamasına giriş yapılması  istenen \"Kullanıcı\" ve \"Çalışan\" alanından portal kullanıcısı ile eşleştirilecek sicil seçilerek  \"Tamam\" butonuna basılır."
+  },
+  {
+    "question": "ArGe'li veya Teknokent'li bir çalışan için eksik gün nedeni Muhtasar  Beyanname raporuna hangi kurallarla gelmektedir?",
+    "answer": "Muhtasar Beyanname raporuna, çalışanın Gün/Saat ve Fazla Mesai fonksiyonunda  eksik gün nedeni girilmemişse 25 kodu, girilmişse 12 kodu getirilmektedir."
+  },
+  {
+    "question": "Gelir ve damga vergisine tabi bir çalışanın bordrosunda SGK prim kesintisi  hesaplanmaması mümkün müdür?",
+    "answer": "Sicil Bilgileri -->Sigorta/Vergi/Sendika sekmesinde \"Sigorta Yüzdesi\" 0 olarak seçilir  ve İşsizlik Sigortası Uygulansın Mı? seçeneği işaretlenmezse ilgili çalışanın bordrosunda  herhangi bir SGK prim hesaplaması yapılmayacak ve Muhtasar Beyanname raporuna  getirilmeyecektir."
+  },
+  {
+    "question": "Gelir İdaresi Başkanlığı tarafından engelli bir çalışan veya bakmakla  yükümlü olduğu eş ve çocukları için verilen vergi indirim belgeleri Hrweb  uygulamasında nasıl tanımlanır?",
+    "answer": "İlgili belge çalışanın kendisine ait ise, Sicil Bilgileri -->Sigorta/Vergi/Sendika  sekmesinde Engellilik Derecesi alanı birinci, ikinci veya üçüncü derece seçeneklerinden  birisi seçilmeli ayrıca Gelir Vergisi Engellilik Oranı alanına da sağlık raporunda yer alan  oran yazılmalıdır. Çalışanın bakmakla yükümlü olduğu eş ve çocukları için verilen bir belge  olması durumunda ise, Çalışan Bilgileri -->Aile Bilgileri fonksiyonundan çalışanın aile bireyi  için Bakmakla Yükümlü Mü? seçeneği işaretlenmeli ve Engellilik Derecesi alanında birinci,  ikinci veya üçüncü derece seçeneklerinden birisi seçilmelidir."
+  },
+  {
+    "question": "Otomatik Katılımlı Bes tutarı SGK matrahının %3'ü olarak  hesaplanmaktadır. Bu oran dışında kesinti olarak farklı bir oran veya tutar  belirlenebilir mi?",
+    "answer": "Çalışan Bilgileri -->Otomatik Katılımlı BES fonksiyonumuz aracılığıyla, istenilen bir  dönemden başlanılarak Katılım Payı (%) ve Katılım Tutarı belirlenebilmektedir. Yeni  belirlenen oran veya tutar SGK matrahının %3'ünden az olmamalıdır."
+  },
+  {
+    "question": "Bordrolarda yer alan Otomatik Katılımlı Bes tutarı nasıl  hesaplanmaktadır?",
+    "answer": "İlgili yasa hükümleri gereğince Otomatik Katılımlı Bes hesaplaması SGK matrahının  %3'ü olarak dikkate alınmakta ve bulunan tutar aşağı yuvarlama kuralı ile tam sayı olarak  bordrolara getirilmektedir. Örneğin Otomatik katılımlı Bes tutarı 594,90 olarak bulunursa,  bu değer bordrolarda 594,00 olarak gözükecektir."
+  },
+  {
+    "question": "Otomatik Katılımlı Bes uygulamasına ara veren çalışanlar için nasıl bir  işlem yapılmalıdır?",
+    "answer": "Çalışan Bilgileri -->Otomatik Katılımlı BES fonksiyonunda çalışan seçilerek \"Yeni  Kayıt\" butonu ile Ara Verme Hakkı işaretlendikten sonra, Başlangıç Dönemi, varsa Bitiş  Dönemi ve Katılım Payı(%) değeri girildikten sonra Tamam butonu ile işlem  gerçekleştirilebilir. Sistem bu dönem aralığında Otomatik Katılımlı Bes hesaplaması  yapmayacaktır."
+  },
+  {
+    "question": "Ek kazançla bağlantılı özel kesinti girilen net bir ek kazanç için farklı bir  özel kesinti tutarı tanımlanabilir mi?",
+    "answer": "Kural olarak ek kazançla bağlantılı özel kesinti tanımı varsa girilen net ek kazanç  tutarı aynı değer olarak özel kesinti alanına getirilmektedir. Net ek kazanç tutarından farklı  bir değer girilmek istenirse, ilgili ay ve çalışan için Aylık Tahakkuk İşlemleri -->Ek Kazanç ve  Özel Kesinti fonksiyonunda Yapılacak İşlem alanında Özel Kesinti seçilmesi sonrasında,  farklı bir Özel Kesinti tutarı girilerek bu tutarın hesaplamalara dahil edilmesi sağlanabilir."
+  },
+  {
+    "question": "\"Dönemsel Ek Kazanç Bilgileri\" ile \"Dönemsel Sabit Ek Kazanç Bilgileri\"  fonksiyonları aracılığıyla yapılan tanımlamaların \"Ek Kazanç\" veya \"Sabit Ek  Kazanç\" tanımlamalarından farkı var mıdır?",
+    "answer": "\"Ek Kazanç\" veya \"Sabit Ek Kazanç\" tanımlamalarında net ek kazançlar özel bir  kesinti ile birbirine bağlanabilmekte ve F02, F28 gibi özel formüller işlem görmektedir.  Ancak \"Dönemsel Ek Kazanç Bilgileri\" ile \"Dönemsel Sabit Ek Kazanç Bilgileri\"  fonksiyonlarımızda bu tanımlar hesaplamalarda kullanılmamaktadır."
+  },
+  {
+    "question": "Hrweb uygulamasında kullanıcıların yetkileri kopyalanabilmekte midir?",
+    "answer": "Güvenlik İşlemleri -->Yetki İşlemleri fonksiyonumuzda \"Kopyala\" butonu aracılığıyla  \"Kopyalanan Kullanıcı (Kaynak)\" ve Kopyalanan Kullanıcı (Hedef) seçimleri yapılmalı ve  yetki kopyalanacak başlıklar seçildikten sonra \"Tamam\" butonuna basılmalıdır."
+  },
+  {
+    "question": "Sicil kartı oluşturulurken çalışanın \"Otomatik Katılımlı BES\"  hesaplamalarına dahil edilmesi sağlanabilir mi?",
+    "answer": "Çalışan Bilgileri -->Sicil Bilgileri fonksiyonu aracılığıyla sicil kartı oluşturulan çalışan  45 yaşından küçük ve TC uyruğunda ise, Çalışan Bilgileri -->Tahakkuka Esas Diğer Bilgiler  ekranındaki \"Otomatik Katılımlı BES\" seçeneği sistem tarafından \"Otomatik Katılımlı BES'e  Dahil\" olarak işleme alınmaktadır."
+  },
+  {
+    "question": "Muhtasar ve Prim Hizmet Beyannamesi Raporu'nda 6111 sayılı SGK teşviği  olan çalışanlar neden 5510 teşviğinde de gösterilmektedir?",
+    "answer": "İlgili yasa hükümleri uyarınca 6111 sayılı SGK teşviğinden faydalanan çalışanın  Gün/Saat ve Fazla Mesai fonksiyonundaki verisinde \"İstirahat\" gün değeri varsa, çalışanın  İstirahat kalemindeki günleri 6111 kapsamında değerlendirilemeyeceğinden bu günlere  karşılık gelen tutarlar 5510 sayılı kanun kapsamında bildirilmektedir."
+  },
+  {
+    "question": "Hrweb uygulamasındaki bordro zarfları çalışanların onayına gönderilebilir  mi?",
+    "answer": "Portal İşlemleri -->Portal Parametreleri fonksiyonumuzda yer alan 192 nolu  parametre değerinin \"E\" olması durumunda bordro zarfları çalışanın onayına  gönderilebilmektedir. Aynı fonksiyonda yer alan 193, 194 ve 195 numaralı parametreler  aracılığıyla onay süreci tarafınızdan yönetilebilmektedir."
+  },
+  {
+    "question": "Portal uygulamasında çalışanlara gösterilen bordro zarfları geriye dönük  olarak kısıtlanabilir mi?",
+    "answer": "Portal İşlemleri -->Portal Parametreleri -->Parametre Grubu -->Genel Parametreler  seçildikten sonra 06 kodlu parametre ile geriye dönük olarak gösterilecek bordro sayısı  tanımlanmaktadır. Aynı grupta yer alan 07 kodlu parametre aracılığıyla ise, Portal  uygulamasında gösterilecek bordro zarfının son yıl ve ay bilgisi tarafınızdan  belirlenmektedir."
+  },
+  {
+    "question": "Hrweb uygulamasına yüklenen son ücret verisini Portal uygulamasında  çalışanların görmemesi için ne yapılabilir?",
+    "answer": "Portal İşlemleri -->Portal Parametreleri -->Parametre Grubu -->Genel Parametreler  seçildikten sonra 07 kodlu parametre değeri ücret değişim tarihinden önceki döneme ait  ise, yükleme yapılan ücret çalışanlara gösterilmemektedir. Burada dikkat edilmesi gereken  nokta, bu görüntüleme kısıtı Çalışan Bilgileri -->Sicil Bilgileri fonksiyonu için geçerlidir.  Yönetici İşlemleri -->Sicil Bilgileri fonksiyonundan yöneticiler çalışanlara ait son ücret  verisini görebilmektedir."
+  },
+  {
+    "question": "Muhtasar ve Prim Hizmet Beyannamesi ekranında \"Muhtasar Eklerini Txt  İndir\" seçeneği ile aldığım raporun 4691 olarak oluşturulan ekinde proje  kodundan önce gelen veri herhangi bir değer oluşturmadan (örneğin; -0001  şeklinde) gelmektedir.",
+    "answer": "Organizasyon Yönetimi -->İşyeri Bilgileri fonksiyonumuza \"Güncelle\" seçeneği ile  giriş yaptıktan sonra, \"Teknoloji ve Geliştirme Bölge Adı\" alanına uygun veriyi girerek  \"Tamam\" butonuna bastıktan sonra rapor tekrar alınabilir. Bu verinin Teknokent  kapsamındaki işyerlerine tanımlanması gerekmektedir."
+  },
+  {
+    "question": "Hrweb Portal uygulamasından doldurulan izin formları otomatik olarak  onaylanabilir mi?",
+    "answer": "İzin İşlemleri -->İzin Kıdem Tablosu -->İzin Nedenleri Detay Bilgileri ekranında  otomatik onay vermek istediğiniz izin türleri için \"Güncelle\" seçeneği ile sayfaya giriş  yaptıktan sonra \"Bu izin tipinde, Hrweb Portalda doldurulan formlar otomatik onaylansın  mı?\" seçeneği işaretlenmeli ve Yardımcı İşlemler -->Programlanmış Görevler -->E17 IZIN  FORMU TOPLU ONAY görevi Aktif hale getirilmelidir. Fonksiyonun çalışabilmesi için izin  formuna ait iş akışının tek onaylı olarak oluşturulması gerekmektedir."
+  },
+  {
+    "question": "Yeni oluşturulan bir çalışanın tahakkuk ekran ve raporlarına gelmemesi  mümkün müdür?",
+    "answer": "Çalışan Bilgileri -->Tahakkuka Esas Diğer Bilgiler ekranında çalışan seçilip \"Güncelle\"  ile sayfaya giriş yapıldıktan sonra \"Bordroya Girmesin !\" seçeneği işaretlendiğinde ilgili  çalışan bordro hesaplamalarına dahil edilmeyecektedir. Aynı ekranda ilgili çalışanın \"Aylık  İş Gücü Çizelgesinde Çıkmasın !\" seçeneği ile İşkur raporlarına getirilmemesi de  sağlanabilmektedir."
+  },
+  {
+    "question": "Hrweb uygulamasının döviz kurları için T.C. Merkez Bankası ile  entegrasyonu bulunmakta mıdır?",
+    "answer": "Uygulamamızda döviz kurları için standart bir entegrasyon süreci yer almaktadır. Bu  sürece dahil olmak istenmesi durumunda Yardımcı İşlemler -->Programlanmış Görevler  seçeneğinde \"Yeni Kayıt\" butonuna basılarak \"Çalıştırılacak İş\" alanında E25 Döviz Kurları  seçilerek diğer zorunlu alanlar da doldurulduktan sonra \"Tamam\" butonuna basılmalıdır.  Ayrıca Uyarlama İşlemleri -->Kodlu Alan Tanımları -->Döviz Kodları seçeneğinde yer alan ek  alan içeriklerinin T.C. Merkez Bankası kodları ile aynı olması gerekmektedir. ABD Doları:  TP.DK.USD.A, (EUR) Euro: TP.DK.EUR.A, (CHF) İsviçre Frangı: TP.DK.CHF.A, İngiliz Sterlini:  TP.DK.GBP.A, (JPY) Japon Yeni: TP.DK.JPY.A. Not: kurların sonuna YTL ifadesinin eklenmesi  gerekebilir."
+  },
+  {
+    "question": "Çalışanın çıkış tarihi ve/veya nedeni nasıl değiştirilebilir?",
+    "answer": "Çalışan Bilgileri -->İşten Çıkan Çalışanı Aktif Hale Getirme fonksiyonumuzda ilgili  çalışanı bulunuz, \"Güncelle\" seçeneği ile kaydın içerisine giriniz, gelen ekrandaki  seçenekleri kontrol ederek \"Tamam\" butonuna basınız, bu işlem sonrasında ilgili sicil aktif  hale gelecektir."
+  },
+  {
+    "question": "İzin mutabakat formlarının toplu olarak basılması mümkün müdür?",
+    "answer": "İzin İşlemleri -->Toplu İzin İşlemleri ekranından Yapılacak İşlem alanında \"Yıllık İzin  Kartı\" seçildikten sonra, ilgili yıl ve çalışanlar belirlenerek \"Devam Et\" butonu ile formlar  oluşturulabilmektedir. Yapılacak İşlemler alanında Yıllık İzin Kartı seçeneği  görüntülenemiyorsa \"Güvenlik İşlemleri --> Yetki İşlemleri --> Toplu İzin Yetkileri\" ekranı  üzerinden kullanıcınız için yetki tanımı yapılması gerekmektedir."
+  },
+  {
+    "question": "Hrweb'de net olarak ödenen ek kazançlar için (farklı bir veri girişi  yapmadan) otomatik olarak özel kesinti oluşturulabilir mi?",
+    "answer": "Öncelikle Güvenlik İşlemleri -->Yetki İşlemleri -->Alan Görüntüleme Yetkileri  fonksiyonumuzdan \"Ek Kazançla Bağlantılı Özel Kesinti\" seçeneğinin işaretli olup  olmadığını kontrol edilmelidir. İlgili ekranda belirtilen seçenek işaretli ise bu seçim  kaldırılarak \"Tamam\" butonuna basılmalıdır. Bu işlem sonrası uygulamamızdan çıkarak  tekrar giriş yapılması son derece önemlidir. Daha sonra Uyarlama İşlemleri -->Hesaplama ve  Formülasyon -->Ek Kazanç alanında ilgili ek kazanç tanımının içerisine \"Güncelle\"  fonksiyonu ile giriş yapılarak \"Ek Kazançla Bağlantılı Özel Kesinti\" alanında yer alan Özel  Kesinti seçilmelidir."
+  },
+  {
+    "question": "Çalışanlara gönderilen bordro zarflarındaki kişisel verilerin gizlenmesi  mümkün müdür?",
+    "answer": "Aylık Tahakkuk İşlemleri -->Bordro Zarfı fonksiyonunda \"Zarf Tipi/İşlem\" olarak  Bordro Zarfı (A4) E -mail seçeneği ile gönderilen bordro zarfları için Organizasyon Yönetimi - ->Şirket Parametreleri -->82 numaralı şirket parametresi değerinin H (Hayır) seçilmesi  durumunda gönderilen PDF'lerde \"Ad, Soyad, TCKN vb.\" bilgiler gizlenecektir."
+  },
+  {
+    "question": "Ücreti ve/veya ek kazancı TL dışında farklı bir döviz cinsi ile ödenen  çalışanların bordrolarında bu tutarların TL karşılıkları nasıl hesaplanmaktadır?",
+    "answer": "Yardımcı İşlemler -->Günlük Döviz İşlemleri fonksiyonumuzda \"Yeni Kayıt\" butonuna  basılarak istenilen para birimi için hesaplama yapılacak tarihteki kur verisi girilmelidir. Kur  verisi girildikten sonra, Aylık Tahakkuk İşlemleri -->Tahakkuk fonksiyonunda tanımlanan  bu tarihin \"Döviz Kur Tarihi\" alanına girilmesi yeterli olacaktır."
+  },
+  {
+    "question": "Hrweb uygulamasında tanımlı olmayan bir para birimini sisteme nasıl  ekleyebilirim?",
+    "answer": "Uyarlama İşlemleri -->Kodlu Alan Tanımları -->Grup alanında \"Döviz Kodları\"  seçilerek \"Yeni Kayıt\" botunu ile tanımlanmak istenen para birimi mevcut para birimlerinin  arasına eklenebilir."
+  },
+  {
+    "question": "Aylık Tahakkuk İşlemleri -->Raporlar -->SGK Raporları / Bildirimler -- >Muhtasar ve Prim Hizmet Beyannamesi Raporu'nda \"İstirahat Sürelerinde  Çalışmamıştır\" kolonuna gelen değerler hangi alandan okunmaktadır?",
+    "answer": "Aylık Tahakkuk İşlemleri -->Gün/Saat ve Fazla Mesai fonksiyonumuzda ilgili  çalışanın \"İstirahat\" ve/veya \"İş Göremezlik\" alanlarında \"gün/saat\" verisi varsa 2,  \"gün/saat\" değerinin olmaması durumunda ise 0 değeri raporumuza getirilmektedir."
+  },
+  {
+    "question": "Aylık Tahakkuk İşlemleri -->Raporlar -->SGK Raporları / Bildirimler -- >Çalışma Belgesi - İşten Ayrılana raporuna çalışanın \"Birikmiş Vergi Matrahı\" ve  \"Asgari Ücret İstisna\" değerleri getirilebilir mi?",
+    "answer": "Organizasyon Yönetimi -->Şirket Parametreleri fonksiyonumuzda 246 numaralı  parametre değerinin E olması durumunda ilgili veriler raporumuzda yer alacaktır."
+  },
+  {
+    "question": "Dönemsel İşlemler menüsünde yer alan \"Yıl Sonu İşlemi\" fonksiyonunun  amacı nedir?",
+    "answer": "Seçilen işyerleri için bir önceki yılın bordro işlemleri tamamlandıktan ve yeni yılın  bordro süreçleri başlamadan önce kullanılmalıdır. Bu şekilde aktif çalışanların birikmiş  vergi matrahları sıfırlanmaktadır."
+  },
+  {
+    "question": "\"Yıl Sonu İşlemi\" ile sıfırlanan birikmiş vergi matrahlarının işyeri bazlı geri  alınması mümkün olabilir mi?",
+    "answer": "Geri alınmak istenen işyerleri seçildikten sonra, ekranın üst bölümünde yer alan  \"Geri Al\" butonu aracılığıyla önceki yıl sonu birikmiş vergi matrahları aktif çalışanların  Aralık bordrolarına getirilecektir. Aralık ayı bordrolarında gerekli düzeltmeler yapıldıktan  sonra, \"Yıl Sonu İşlemi\" geri alınan işyerleri için tekrardan yapılmalıdır."
+  },
+  {
+    "question": "\"Yıl Sonu İşlemi\" fonksiyonunda yer alan \"Kapatılacak Yıl\" bilgisi  değiştirilebilir mi?",
+    "answer": "Sistem altyapımız gereği kapatılacak yıl alanına gelen veri, aktif takvim yılından bir  önceki yıla denk gelmektedir. Bu bilginin değiştirilebilmesi mümkün olmayıp, yıl sonu  işleminin Ocak ayı içerisinde yapılması gerekmektedir."
+  },
+  {
+    "question": "Hrweb uygulamasında son aya ait hesaplanan bordroların  değiştirilmemesini nasıl sağlayabilirim?",
+    "answer": "Dönemsel İşlemler ->Ay Kilitleme / Bordro Dönemi Kapama Onayı fonksiyonumuzda  kapatılacak yıl ve ay bilgisi seçildiğinde geriye doğru tüm bordroların kilitlenmesi veya  değiştirilememesi sağlanmış olacaktır."
+  },
+  {
+    "question": "Tahakkuk ekranında seçilen dönem için \"Seçilen Ay İçin Kilitleme İşlemi  Yapıldığından, Hesaplama Yapma ve Geri Alma İşlemleri Yapılamaz !\" mesajı  alıyorum. Bordroları revize etmek için ne yapmalıyım?",
+    "answer": "Dönemsel İşlemler ->Ay Kilitleme / Bordro Dönemi Kapama Onayı fonksiyonumuzda  işlem yapılmak istenilen dönem ve sonrası kayıtların silinmesi yeterli olacaktır."
+  },
+  {
+    "question": "Hrweb tarafından hesaplanan \"önceki aydan devir SGK\" rakamları  değiştirilebilir mi?",
+    "answer": "Sistem altyapımız gereği \"önceki aydan devir SGK\" rakamlarının değiştirilebilmesi  mümkün değildir."
+  },
+  {
+    "question": "Bordro zarflarında yer alan özel indirim tutarı neyi ifade etmektedir?",
+    "answer": "Çalışan Bilgileri -->Sicil Bilgileri -->Sigorta/Vergi/Sendika sekmesinde \"Engellilik  Derecesi\" seçilen çalışanlar için, ilgili dönemde gelir vergisinin matrahından düşülen tutarı  ifade etmektedir."
+  },
+  {
+    "question": "İşkur çizelgesinde çalışanların meslek kodları gelmiyor.",
+    "answer": "Uyarlama İşlemleri -->Kodlu Alan Tanımları -->Meslek Kodları liste ekranında \"Ek  Alan İçerikleri\" boş olabilir. İlgili alana veri girişi 7 hane (örneğin 2423.01) olarak  yapılmalıdır."
+  },
+  {
+    "question": "Çalışanın Gün/Saat kaydı olmasına rağmen \"Tahakkuk\" liste ekranında  çalışan kaydı gözükmemektedir.",
+    "answer": "Çalışanın İşyerine Giriş Tarihi'nin bordro döneminden önce olup olmadığı kontrol  edilmelidir. Çalışan Bilgileri -->Tahakkuka Esas Diğer Bilgiler ekranımızda \"Bordroya  Girmesin\" seçeneğinin işaretli olup olmadığı da kontrol edilmelidir."
+  },
+  {
+    "question": "Çalışanın bordrosunda gün değeri olmasına rağmen ücret  hesaplanmamaktadır.",
+    "answer": "1) Çalışanın saatlik ücretli olması durumunda, gün değeri ile birlikte saat değerinin  de girilmesi gerekmektedir. 2) Çalışan aylık ücretli ve Organizasyon Yönetimi -->Şirket  Parametreleri ekranında 32 nolu şirket parametresinin değeri E ise, gün değeri ile birlikte  saat değerinin de girilmesi gerekmektedir."
+  },
+  {
+    "question": "Çalışanın bordrosunda istirahat gün değeri olmasına rağmen ücret verisi  bordroya gelmemektedir.",
+    "answer": "Organizasyon Yönetimi -->İşyeri Bilgileri -->İşyeri Tahakkuka Esas Diğer Bilgiler  ekranındaki \"İstirahat Ücret Yüzdesi\" alanında 100 değeri olmalıdır."
+  },
+  {
+    "question": "Sicil kartında tanımlamak için aradığım meslek kodunu bulamıyorum.",
+    "answer": "Uyarlama İşlemleri -->Kodlu Alan Tanımları -->Grup alanında \"Meslek Kodları\"  seçtikten sonra, \"Yeni Kayıt\" butonuna basarak tanımlamak istediğiniz meslek kodunu  \"Alan Kodu\" ve \"Alan İçeriği\" bölümlerine yazarak \"Tamam\" butonuna basınız. Yasal  düzenlemeler uyarınca SGK ve İşkur tarafından meslek kodları ortak olarak  kullanılmaktadır. Tüm meslek kodlarının yer aldığı güncel listeye aşağıdaki adresten  ulaşabilirsiniz. Türkiye İş Kurumu - Türk Meslekler Sözlüğü (iskur.gov.tr)"
+  },
+  {
+    "question": "Bordro zarfında \"Net Kazanç\" tutarını nasıl görüntüleyebilirim?",
+    "answer": "Organizasyon Yönetimi -->Şirket Parametreleri -->130 numaralı parametrenin  değerini E olarak değiştirdiğinizde \"Net Kazanç\" tutarları bordro Pdf'lerinize getirilecektir.  Net Kazanç = Brüt Kazançlar Toplamı - Yasal Kesintiler formülü ile bulunmaktadır."
+  },
+  {
+    "question": "Bordro zarfının alt kısmına dip not eklemek veya yazılmış olan dip notu  değiştirmek nasıl gerçekleştirilir?",
+    "answer": "Organizasyon Yönetimi -->Şirket Parametreleri -->142 numaralı parametrenin  değerine girilen veri bordro zarfının alt kısmında dip not olarak gösterilmektedir. Bu not  değiştirilmek istenirse parametre değeri alanının güncellenmesi yeterli olacaktır."
+  },
+  {
+    "question": "Bordro zarfının alt kısmında yer alan dip not alanında güncelleme  yapmamıza rağmen, bu değişiklik hesaplanmış bordrolarda görünmemektedir.",
+    "answer": "Organizasyon Yönetimi -->Şirket Parametreleri -->142 numaralı parametre değeri  değiştirildikten sonra, yeni hesaplanan bordrolarınızda aktif olacaktır. Geçmiş  bordrolarınızda da görüntülenmesi istenirse, ilgili bordroların geri alınarak tekrar  hesaplatılması gerekecektir."
+  },
+  {
+    "question": "Net ücretli çalışanların bordrosunda 1 kuruş fark neden oluşur?",
+    "answer": "Puantaj kalemleri ve yasal kesintiler virgülden sonra 6 hane olarak hesaplanıp,  bordro zarfında 2 hane olarak gösterildiği için, brüt kazançlar toplamı ve yasal kesintilerde  1'er kuruşluk farklar ortaya çıkabilmektedir."
+  },
+  {
+    "question": "Bordro zarflarının bazılarında \"Eksik Sigorta\" değeri neden  gözükmektedir?",
+    "answer": "Bildiğiniz üzere bordro hesaplamalarında SGK günü ile SGK Günlük Alt Sınır değeri  çarpılarak SGK'ya bildirilebilecek minimum matrah tutarı bulunmaktadır. Brüt Kazançlar  alanındaki değer bu hesaplanan tutardan düşük olduğunda aradaki fark bordro zarfında  Eksik Sigorta alanında gösterilmektedir. Hrweb sistemimizde SGK Günlük Alt Sınır değeri,  Uyarlama İşlemleri -->Yasal Bilgiler -->SGK/Kıdem/İhbar/Diğer Bilgiler fonksiyonumuzdan  tanımlanmaktadır."
+  },
+  {
+    "question": "Sicil kartında tanımlamak için aradığım masraf yerini bulamıyorum.",
+    "answer": "Organizasyon Yönetimi -->Masraf Yeri Bilgileri fonksiyonumuz üzerinden yeni bir  masraf yeri tanımlaması yapılabilmektedir."
+  },
+  {
+    "question": "Aynı bordroda birden fazla icra kesintisi yapılabilir mi?",
+    "answer": "Aylık Tahakkuk İşlemleri -->İcra Kesintisi fonksiyonumuzdan tanımlanan icra  kesintileri içerik olarak farklı kesinti senaryolarına tabi olarak çalıştığından formülü \"İcra\"  olan tek bir kesinti bordroya dahil edilebilmektedir. Ancak sabit bir icra kesinti tutarı varsa  bu sabit kesinti \"Sabit Özel Kesinti\" alanından tanımlanarak aynı zamanda icra kesinti  hesaplamasının da yapılabilmesi mümkündür."
+  },
+  {
+    "question": "Çalışanın \"Kalan Yıllık İzni\"ni bordroya nasıl aktarabilirim?",
+    "answer": "Çalışanın çıkış tarihi girildikten sonra, Aylık Tahakkuk İşlemleri -->Kıdem / İhbar  Tazminatı fonksiyonumuzda yer alan \"Bordroya Aktar\" seçeneği ile çalışanın kalan yıllık  izni ek kazanç olarak çıkış yapılan dönemin bordrosuna aktarılabilir."
+  },
+  {
+    "question": "Çalışanın bordroya aktarılan \"Kalan Yıllık İzni\" hatalı ise, bunu nasıl  düzeltebilirim?",
+    "answer": "İzin İşlemleri -->İzin Kartı Bilgileri fonksiyonumuzda ilgili izin yılına ait kaydın  içerisine \"Güncelle\" fonksiyonu ile giriş yapılarak \"Bordroya Aktarılan İzin\" alanında yer  alan değer sıfırlandıktan sonra tekrardan aktarım işlemi gerçekleştirilebilir."
+  },
+  {
+    "question": "Yıl içerisinde işbaşı yapan bir çalışanın önceki işyerinden getirmiş olduğu  \"Birikmiş Vergi Matrahı\" girişini nasıl yapabilirim?",
+    "answer": "Aylık Tahakkuk İşlemler -->Birikmiş Vergi Matrahı Düzeltme fonksiyonumuzda ilgili  çalışan için \"İşlem Tutarı\" alanına kaydedilmek istenen değer girilerek \"Tamam\" butonuna  basılması yeterlidir."
+  },
+  {
+    "question": "Hesaplanan bordroların kontrolü açısından hangi raporların incelenmesi  önerilmektedir?",
+    "answer": "Aylık Tahakkuk İşlemleri -->Raporlar -->Tahakkuk Kontrol Raporları -->06 -Tahakkuk  Kontrol Raporu ve Aylık Tahakkuk İşlemleri -->Raporlar -->Diğer Raporlar -->23 -Fark  Raporu'nun detaylı incelenmesi önerilmektedir."
+  },
+  {
+    "question": "İşveren tarafından ödenen BES tutarları tüm bordrolarda kazanç ve kesinti  olarak nasıl gösterilir?",
+    "answer": "Organizasyon Yönetimi -->Şirket Parametreleri ekranında 78 nolu şirket  parametresinin değerini E olarak değiştirildikten sonra, varsa hesaplanan bordroların geri  alınarak tekrar çalıştırılması yeterli olacaktır."
+  },
+  {
+    "question": "SGK giriş ve çıkış işlemleri Hrweb uygulaması üzerinden yapılabilir mi?",
+    "answer": "SGK ile gerçekleştirdiğimiz entegrasyon sayesinde Hrweb uygulamamızdaki giriş -  çıkış kayıtlarından yola çıkarak SGK'nın ilgili ekranlarında detay işlemler  gerçekleştirilmekte ve SGK tarafından oluşturulan barkodlu belgeler tarafınıza  uygulamamız üzerinden sunulmaktadır. Detaylı işlem adımları için Hrweb ana sayfasında  yer alan \"Sıkça Sorulan Sorular\" başlığı altındaki dokümanımızdan faydalanabilirsiniz."
+  }
+]

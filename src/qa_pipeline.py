@@ -4,7 +4,6 @@ import json
 import os
 from prompt_builder import build_prompt
 
-# Prompt talimatlarını JSON'dan yükle
 instructions_path = os.path.join(os.path.dirname(__file__), "prompt_instructions.json")
 with open(instructions_path, "r", encoding="utf-8") as f:
     INSTRUCTIONS = json.load(f)
@@ -44,26 +43,13 @@ def ask_model(prompt, model="qwen:7b-chat", timeout=90):
     except Exception as e:
         return f"{model} hatası: {str(e)}"
 
-
-def guess_document_type(summary: str) -> str:
-    json_path = os.path.join(os.path.dirname(__file__), 'document_types.json')
-    with open(json_path, 'r', encoding='utf-8') as f:
-        document_types = json.load(f)
-
-    summary_lower = summary.lower()
-    for doc_type, keywords in document_types.items():
-        if any(keyword in summary_lower for keyword in keywords):
-            return doc_type
-    return "general"
-
-def ask_llm(question, context):
+def ask_llm(question, context, history=None):
     log("Tüm işlem Qwen modeli ile başlatılıyor...")
 
-    # Belge türünü context üzerinden tahmin et
-    doc_type = guess_document_type(context)
+    memory_prompt = ""
+    if history:
+        for i, (user_q, assistant_a) in enumerate(history):
+            memory_prompt += f"Kullanıcı: {user_q}\nAsistan: {assistant_a}\n"
 
-    # Prompt oluştur
-    prompt = build_prompt(question, context, doc_type, INSTRUCTIONS)
-
-    # Cevabı al
+    prompt = memory_prompt + f"Kullanıcı: {question}\n\nBağlam:\n{context}\n\nAsistan:"
     return ask_model(prompt, model="qwen:7b-chat", timeout=150)

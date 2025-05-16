@@ -6,3 +6,6 @@ print("✅ Embedding model loaded")
 
 def get_embeddings(texts):
     return model.encode(texts, show_progress_bar=True)
+
+def get_model():
+    return model
