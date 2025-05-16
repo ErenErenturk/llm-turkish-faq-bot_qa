@@ -20,7 +20,7 @@ if "chat_history" not in st.session_state:
 
 # Load and embed dataset only once
 if "dataset_chunks" not in st.session_state:
-    with open("qa_dataset.json", encoding="utf-8") as f:
+    with open("data/qa_dataset.json", encoding="utf-8") as f:
         data = json.load(f)
 
     st.session_state.dataset_chunks = [
