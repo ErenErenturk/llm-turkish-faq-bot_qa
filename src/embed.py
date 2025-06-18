@@ -1,9 +1,11 @@
 import os
 from sentence_transformers import SentenceTransformer
 from joblib import Memory
+import os
+import certifi
 
 print("Loading embedding model...")
-model = SentenceTransformer("models/paraphrase-multilingual-mpnet-base-v2/")
+model = SentenceTransformer("paraphrase-multilingual-mpnet-base-v2")
 print("Embedding model loaded.")
 
 # 📦 Embed cache klasörü
